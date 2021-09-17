@@ -10,7 +10,9 @@ import org.openqa.selenium.Pdf;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.print.PrintOptions;
-
+/**
+Generates PDF using Selenium in the local environment. For Docker support check {@link DockerSeleniumTest}
+ */
 public class Testpdf {
 	
 	 public static void main(String[] args) {

@@ -14,12 +14,16 @@ import java.net.URL;
 import java.util.UUID;
 
 /**
- *
- * This class verifies if ChromeDriver can be used with selenium-docker environment. Assumption was that Chromedriver which extends RemoteChromeDriver
- * will have functionality to connect to remote server as does RemoteWebDriver. But ChromeDriver doesnot have the support and throws an error asking us to
- * configure the local chrome path "webdriver.chrome.driver" {@link org.openqa.selenium.chrome.ChromeDriverService} and doesnot consider the "webdriver.remote.server" setting that RemoteWebDriver sets
-*/
-public class DevTools {
+ * {@Link ChromeDriver} gives us handle to DevTools which can be used to work with CDP.
+ * This class verifies if ChromeDriver can be used with selenium-docker environment. In which case, we can use the
+ * DevTools to implement PagewaitLoad functionality
+ * Assumption was that Chromedriver which extends RemoteChromeDriver will have functionality to
+ * connect to remote server as does RemoteWebDriver. But ChromeDriver doesnot have the support and
+ * throws an error asking us to configure the local chrome path "webdriver.chrome.driver" {@link
+ * org.openqa.selenium.chrome.ChromeDriverService} and doesnot consider the
+ * "webdriver.remote.server" setting that RemoteWebDriver sets
+ */
+public class ChromeDriverSupport {
 
     public static String remote_url_chrome = "http://localhost:4444";
 
